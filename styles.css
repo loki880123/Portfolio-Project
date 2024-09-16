@@ -7,9 +7,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f5f5f5; /* Cream background */
+    color: #333; /* Dark grey text */
     line-height: 1.6;
+    font-size: 16px; /* Base font size */
 }
 
 /* Container */
@@ -19,10 +20,55 @@ body {
     max-width: 1200px;
 }
 
+/* Headings */
+h1, h2, h3 {
+    color: #333; /* Dark grey text for headings */
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem; /* Same as the 'Skills & Expertise' heading */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2rem; /* Same font size as the 'Skills & Expertise' section */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1.2rem; /* Consistent font size */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Bold labels */
+strong {
+    font-weight: bold;
+}
+
 /* Navigation Bar */
 nav {
-    background-color: #333;
-    padding: 10px 0;
+    background-color: #333; /* Dark grey background */
+    padding: 15px;
 }
 
 nav ul {
@@ -32,43 +78,43 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #f5f5f5; /* Cream color for links */
     text-decoration: none;
     font-size: 1.2rem;
-    padding: 8px 12px;
-    transition: background-color 0.3s;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #555; /* Slightly lighter grey for hover */
     border-radius: 5px;
 }
 
 /* Header Section */
 header {
-    background-color: #007bff;
-    color: white;
+    background-color: #000; /* Black background */
+    color: #f5f5f5; /* Cream text */
     text-align: center;
     padding: 100px 20px;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Matching font size */
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Slightly smaller than headings */
     margin-bottom: 20px;
 }
 
 header .btn {
-    background-color: white;
-    color: #007bff;
+    background-color: #f5f5f5; /* Cream button */
+    color: #000; /* Black text */
     padding: 10px 20px;
     font-size: 1.2rem;
     text-decoration: none;
@@ -77,32 +123,37 @@ header .btn {
 }
 
 header .btn:hover {
-    background-color: #0056b3;
-    color: white;
+    background-color: #ddd; /* Lighter grey on hover */
+    color: #000;
 }
 
-/* Sections */
+/* Section Styles */
 .section {
     padding: 60px 0;
     text-align: center;
 }
 
-.section h1 {
+.section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .section p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #555;
+    font-size: 1.2rem; /* Consistent paragraph font size */
+    margin-bottom: 20px;
 }
 
+.section ul li {
+    font-size: 1.2rem;
+}
+
+/* Light Background for Alternating Sections */
 .bg-light {
-    background-color: #f4f4f4;
+    background-color: #f5f5f5; /* Cream background */
+    color: #333; /* Dark grey text */
 }
 
-/* Projects and Certifications */
+/* Project and Certification Cards */
 .project-list,
 .certification-list {
     display: grid;
@@ -113,43 +164,31 @@ header .btn:hover {
 
 .project,
 .certification {
-    background-color: white;
+    background-color: #222; /* Darker grey background for cards */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
+    color: #f5f5f5; /* Cream text for cards */
 }
 
-.project h2,
-.certification h2 {
+.project h3,
+.certification h3 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .project p,
 .certification p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #555;
-}
-
-.project ul,
-.certification ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.project ul li,
-.certification ul li {
-    font-size: 1rem;
-    margin-bottom: 8px;
 }
 
 .project .btn,
 .certification .btn {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
+    background-color: #f5f5f5;
+    color: #000;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -158,7 +197,7 @@ header .btn:hover {
 
 .project .btn:hover,
 .certification .btn:hover {
-    background-color: #0056b3;
+    background-color: #ddd;
 }
 
 /* Badge Image */
@@ -182,7 +221,7 @@ form {
 
 .form-group label {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
     color: #333;
 }
@@ -191,10 +230,11 @@ form {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 5px;
     border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    background-color: #222;
+    color: #f5f5f5;
 }
 
 .form-group textarea {
@@ -203,10 +243,10 @@ form {
 }
 
 button {
-    background-color: #007bff;
-    color: white;
+    background-color: #f5f5f5;
+    color: #000;
     padding: 10px 20px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -214,13 +254,13 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ddd;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #000;
+    color: #f5f5f5;
     text-align: center;
     padding: 20px 0;
 }
@@ -244,4 +284,3 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
-
